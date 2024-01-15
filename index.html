@@ -10,9 +10,14 @@
   <header>
 
     <h1>Il mio Viaggio a Londra</h1>
-    <img src="./img/prima.0.jpg" alt="prima.0" width="300" title="ruota panoramica">
-    <img src="img/prima.1.jpg" alt="prima.1"  width="300" title="skyline">
-    <img src="img/prima.2.jpg" alt="prima.2" width="300" title="Big Beng">
+      <!-- inserire le immagini dentro un div per non lasciare volanti -->
+      <!-- se elimino lo spazio tra i tag "img" e le scrivessi una accanto all'altra (sulla stesasa riga) le foto si vedrebbero attaccate come stessa immagine -->
+    <div>
+      <img src="./img/prima.0.jpg" alt="prima.0" width="300" title="ruota panoramica">
+      <img src="img/prima.1.jpg" alt="prima.1"  width="300" title="skyline">
+      <img src="img/prima.2.jpg" alt="prima.2" width="300" title="Big Beng">
+    </div>
+
     <hr>
 
   </header>
@@ -22,15 +27,17 @@
     <!-- Le mie spese -->
     <section>
 
-      <h3>Le mie spese</h3>
+      <h2>Le mie spese</h2>
       <div>
           <!-- talella -->
           <table> 
             <!-- intestazione tabella -->
             <thead>
+              <tr>
                 <th>Numero</th>
                 <th>Descrizione</th>
                 <th>Costo</th>
+              </tr>
             </thead>
 
             <!-- corpo tabella -->
@@ -58,8 +65,8 @@
             <!-- chiusura tabella -->
             <tfoot>
               <tr>
-                <td>Totale</td>
-
+                <!-- per attaccare 2 celle della tabella inserire "colspan" ed il numero di colonne da attaccare. sbagliato lasciare comando vuoto -->
+                <td colspan="2">Totale</td>
                 <td>360 &euro;</td>
               </tr>
             </tfoot>
@@ -93,28 +100,32 @@
 
       <!-- lista ordinata -->
       <ol>
-        <li>Numeri utili di emergenza</li>
+        <li>
+          <span>Numeri utili di emergenza</span>
           <!-- lista non ordinata -->
           <ul>
             <li> <strong>999</strong> - Emergenza</li>
             <li> <strong>101</strong> - Numero polizia</li>
             <li> <strong>111</strong> - Numero assistenza medica</li>
           </ul>
-
+        </li>
         <!-- lista ordinata -->
-        <li>Hotel</li>
+        <li>
+          <span>Hotel</span>
           <!-- lista non ordinata -->
           <ul>
             <li> <strong>Nome hotel:</strong> Buckingham Palace</li>
             <li> <strong>Indirizzo hotel:</strong> Westminster, London SW1A 1AA, Regno Unito</li>
-        </ul>
-
+          </ul>
+        </li>
         <!-- lista ordinata -->
-        <li>Aereo</li>
+        <li>
+          <span>Aereo</span>
           <!-- lista non ordinata -->
           <ul>
             <li> <strong>Volo di Andata:</strong>  Y1234X, ore 9.30 da Milano Malpensa</li>
             <li> <strong>Volo di Ritorno:</strong>  Y1236X, ore 18:30 da London Heathrow</li>
+        </li>
         </ul>
       </ol>
 
@@ -125,8 +136,11 @@
     <section>
 
       <h3>Le foto</h3>
-      <img src="https://www.abta.com/sites/default/files/styles/large/public/media/uploads/london-400x400-compressor_0.jpg" alt="tamigi" title="tamigi">
-      <img src="https://imgc.allpostersimages.com/img/posters/evening-tower-bridge-and-river-thames-london_u-L-P2QVZJ0.jpg?artPerspective=n" alt="tower bridge" title="Tower Bridge">
+
+      <div>
+        <img src="https://www.abta.com/sites/default/files/styles/large/public/media/uploads/london-400x400-compressor_0.jpg" alt="tamigi" title="tamigi">
+        <img src="https://imgc.allpostersimages.com/img/posters/evening-tower-bridge-and-river-thames-london_u-L-P2QVZJ0.jpg?artPerspective=n" alt="tower bridge" title="Tower Bridge">
+      </div>
     </section>
 
   </main>
